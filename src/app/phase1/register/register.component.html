@@ -1,0 +1,74 @@
+<div class="login-container" style="display: flex; background-color: black;
+justify-content: center;
+align-items: center;
+height: 120vh;
+overflow: hidden;
+position: relative;
+z-index: 2;">
+
+  <video autoplay muted loop id="bgVideo" style="position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  margin-left: -12vw;
+  z-index: 1;">
+    <source src="/assets/bgvid.mp4" type="video/mp4">
+  </video>
+  <div class="form-box2" style="z-index: 1; margin-left:50vw ;">
+    <div class="form-value">
+
+      <h1 style="color: beige; font-weight: bold; "> REGISTER</h1>
+
+  <form [formGroup]="registerForm">
+    <div>
+        <mat-form-field class="login-input" style="width: 20vw;">
+          <mat-label class="login-label">Full Name</mat-label>
+          <input matInput placeholder="Please enter fullName"  formControlName="fullName" required >
+
+
+        </mat-form-field>
+      </div>
+
+    <div>
+      <mat-form-field class="login-input" style="width: 20vw;">
+        <mat-label class="login-label">Email id</mat-label>
+        <input matInput placeholder="Please enter Email"  formControlName="email" required >
+
+
+      </mat-form-field>
+    </div>
+
+    <div>
+        <mat-form-field class="login-input" style="width: 20vw;">
+          <mat-label class="login-label">Phone Number</mat-label>
+          <input matInput placeholder="Please enter phoneNumber" formControlName="phoneNumber" required >
+
+
+        </mat-form-field>
+      </div>
+
+    <div>
+      <mat-form-field class="login-input" style="width: 20vw;" >
+        <mat-label class="login-label">Password</mat-label>
+        <input matInput type="password" placeholder="Please enter password" formControlName="password" required >
+      </mat-form-field>
+    </div>
+    <br>
+    <div style="justify-content: center; display: flex; gap: 10px;">
+      <button mat-raised-button style="width: 7vw;" color="primary" type="submit" [disabled]="!registerForm.valid" (click)="register()" class="login-button mat-button-lg">Register</button>
+      <button mat-raised-button style="width: 7vw;" type="button" color="warn" (click)="registerForm.reset()" class="login-button mat-button-lg">Reset</button>
+    </div> <br>
+  <mat-card-actions>
+        <a href="/" style="text-decoration: none;justify-content: center;color: white; ">Need Account ? <span class="text-danger"> <u> Login </u></span></a>
+    </mat-card-actions>
+
+  </form>
+
+
+</div>
+  </div>
+
+</div>

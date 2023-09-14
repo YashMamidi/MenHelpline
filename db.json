@@ -1,0 +1,65 @@
+{
+  "singup": [
+    {
+      "fullName": "yaswwanth",
+      "email": "mamidi.yaswanth13@gmail.com",
+      "phoneNumber": "08985537919",
+      "password": "yashuismad@13sdfsd",
+      "id": 1
+    },
+    {
+      "fullName": "yash",
+      "email": "hjajsndan",
+      "phoneNumber": "aksjhdx",
+      "password": "ksajmhcxasnz",
+      "id": 2
+    },
+    {
+      "fullName": "sadsada",
+      "email": "sadfdas",
+      "phoneNumber": "safsa",
+      "password": "asfas",
+      "id": 3
+    },
+    {
+      "fullName": "yash",
+      "email": "yash",
+      "phoneNumber": "789456123",
+      "password": "qwer",
+      "id": 4
+    },
+    {
+      "fullName": "yash",
+      "email": "yash",
+      "phoneNumber": "1234",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "fullName": "yash",
+      "email": "yash",
+      "phoneNumber": "987654321",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "fullName": "NAVYATHA  AVULA",
+      "email": "navyathaavulanavya@gmail.com",
+      "phoneNumber": "+919440325477",
+      "password": "Navyatha",
+      "id": 7
+    },
+    {
+      "fullName": "yash",
+      "email": "mamidi.yaswanth13@gmail.com",
+      "phoneNumber": "08985537919",
+      "password": "Yashu",
+      "id": 8
+    }
+  ],
+  "Query": [
+    {
+      "id": 1
+    }
+  ]
+}

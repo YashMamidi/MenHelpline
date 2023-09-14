@@ -1,0 +1,26 @@
+
+<div class="navbar" style="z-index: 3;" >
+
+  <mat-toolbar color="primary">
+    <h1 class="title" routerLink="/home" style="cursor: pointer;">Aarambha
+      <div class="aurora">
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+        <div class="aurora__item"></div>
+      </div>
+    </h1>
+    <span class="spacer"></span>
+    <button mat-button routerLink="/phase2/about" >About</button>
+    <button mat-button routerLink="/home" >home</button>
+    <button mat-button routerLink="/why" >WHY!</button>
+    <button mat-button routerLink="/phase3">ASK</button>
+    <button mat-button routerLink="/support">support</button>
+    <button mat-button routerLink="/global">global</button>
+    <button mat-button class="raise-fund-button" (click)="logout()" >Logout</button>
+  </mat-toolbar>
+
+
+</div>
+
+<router-outlet></router-outlet>

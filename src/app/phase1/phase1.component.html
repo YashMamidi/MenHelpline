@@ -1,0 +1,75 @@
+<div class="login-container" style="display: flex; background-color: black;
+justify-content: center;
+align-items: center;
+height: 100vh;
+overflow: hidden;
+position: relative;
+z-index: 2;">
+
+  <video autoplay muted loop id="bgVideo" style="position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  margin-left: -12vw;
+  z-index: 1;">
+    <source src="/assets/bgvid.mp4" type="video/mp4">
+  </video>
+  <div class="form-box2" style="z-index: 1; margin-left:50vw ;">
+    <div class="form-value">
+
+      <h1 style="color: beige; font-weight: bold; "> LOGIN</h1>
+
+        <form #loginForm="ngForm">
+          <div>
+            <mat-form-field class="login-input" style="width: 20vw;">
+              <mat-label class="login-label">User Name</mat-label>
+              <input matInput placeholder="Please enter username" name="uName" [(ngModel)]="userName" required >
+
+
+            </mat-form-field>
+          </div>
+          <br>
+
+          <div>
+            <mat-form-field class="login-input" style="width: 20vw;" >
+              <mat-label class="login-label">Password</mat-label>
+              <input matInput [type]="passwordFieldType" placeholder="Please enter password" name="pwd" [(ngModel)]="password" required >
+              <button mat-icon-button type="button" matSuffix (click)="togglePasswordVisibility()">
+                <mat-icon>{{ passwordFieldType === 'password' ? 'visibility' : 'visibility_off' }}</mat-icon>
+              </button>
+              <br>
+
+
+
+            </mat-form-field>
+          </div>
+          <br>
+          <br>
+
+          <div style="justify-content: center; display: flex; gap: 5vw;">
+            <button mat-raised-button color="primary" style="width: 7vw;" type="submit" [disabled]="!loginForm.valid" (click)="login()" class="login-button mat-button-lg">Login</button>
+            <button mat-raised-button type="button" style="width: 7vw;"color="warn" (click)="loginForm.reset()" class="login-button mat-button-lg">Reset</button>
+          </div>
+          <br><br>
+          <mat-card-actions >
+            <button mat-raised-button  style="width: 20vw; height: 3vw;" (click)="change()" class="login-with-google-btn">
+              Sign in with Google
+            </button>
+          </mat-card-actions> <br>
+          <br>
+          <mat-card-actions>
+            <a routerLink="phase1/register" style="text-decoration: none;justify-content: center;color: white;">Need Account ? <span class="text-danger"> <u> Register</u></span></a>
+
+        </mat-card-actions>
+
+
+        </form>
+
+
+    </div>
+  </div>
+
+</div>
